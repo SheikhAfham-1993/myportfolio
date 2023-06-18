@@ -1,7 +1,7 @@
 import DefaultLayout from '@/defaultlayout/DefaultLayout'
 import React from 'react'
 import myEndorsments from '@/json/myEndorsments.json'
-import EndorserBox from '@/components/endorserBox'
+import EndorserBox from '@/components/EndorserBox'
 const Me = () => {
   return (
     <DefaultLayout>
