@@ -5,7 +5,7 @@ const Professional = () => {
   return (
     <DefaultLayout>
       <div className="flex flex-row w-full">
-        <div className="w-[70%] flex-1 bg-green-500">
+        <div className="w-[70%] flex-1">
           <div className="flex flex-col gap-y-4">
             <div className="text-2xl">Softronic Systems Pvt. Ltd</div>
 
@@ -138,7 +138,7 @@ const Professional = () => {
             </div>
           </div>
         </div>
-        <div className="w-[30%] flex-none bg-yellow-400">
+        <div className="w-[30%] flex-none">
           <div className="flex flex-col gap-y-4">
             <span className="text-2xl">Overall Skills</span>
             <ul className="list-disc ml-10">
