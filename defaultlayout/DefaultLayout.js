@@ -1,6 +1,7 @@
 import React from 'react'
-import Link from 'next/link'
+
 import Image from 'next/image'
+import TopBar from '@/components/topBar/TopBar'
 const DefaultLayout = ({ children }) => {
   return (
     <>
@@ -9,9 +10,7 @@ const DefaultLayout = ({ children }) => {
           <Image src="/logo.png" alt="My Logo" width="150" height="150"></Image>
         </div>
         <div className="flex flex-1 justify-end space-x-4">
-          <Link href="/">Home</Link>
-          <Link href="/professional">Professional</Link>
-          <Link href="/me">About me</Link>
+          <TopBar />
         </div>
       </div>
       <main className="flex min-h-screen flex-col items-center justify-between px-32 py-14">
