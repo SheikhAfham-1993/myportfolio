@@ -1,154 +1,94 @@
+'use client' // This is a client component
+
+import React, { useState } from 'react'
+import Mara from '@/components/Professional/Mara'
+import Softronic from '@/components/Professional/Softronic'
 import DefaultLayout from '@/defaultlayout/DefaultLayout'
-import React from 'react'
+import { classNames } from '@/lib/functions'
 
 const Professional = () => {
+  const [activeTab, setActiveTab] = useState('#Mara')
+  const [tabs, setTabs] = useState([
+    {
+      name: 'Mara',
+      href: '#Mara',
+      current: true,
+    },
+    {
+      name: 'Softronic',
+      href: '#Softronic',
+      current: false,
+    },
+  ])
+
+  const switchTab = (e) => {
+    try {
+      setTabs(
+        tabs.map((tab) => {
+          if (tab.href == e) {
+            tab.current = true
+          } else {
+            tab.current = false
+          }
+          return tab
+        })
+      )
+
+      setActiveTab(e)
+    } catch (e) {
+      // console.log(e)
+    }
+  }
+
+  const returnAnchorTag = (tab) => {
+    return (
+      <a
+        key={tab.name}
+        href={tab.href}
+        onClick={() => switchTab(tab.href)}
+        className={classNames(
+          tab.current
+            ? 'border-blue-600 text-blue-600'
+            : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700',
+          'group inline-flex items-center border-b-[3px] pt-4 pb-[11px] px-4 text-sm font-medium'
+        )}
+      >
+        <span className="whitespace-nowrap">{tab.name}</span>
+      </a>
+    )
+  }
+
   return (
     <DefaultLayout>
-      <div className="flex flex-row w-full">
+      <div className="flex flex-row w-full relative">
         <div className="w-[70%] flex-1">
-          <div className="flex flex-col gap-y-4">
-            <div className="text-2xl">Softronic Systems Pvt. Ltd</div>
-
-            {/* Section Internship */}
-            <div className="inline-block">
-              <div className="ml-4">
-                <span className="text-xl">Internship </span>
-                <span className="italic text-sm text-gray-500">
-                  Feb-2016 - May-2016
-                </span>
-                <div className="font-semibold">
-                  Technologies used:{' '}
-                  <span className="font-light">
-                    ASP.NET, JQuery, Microsoft SQL Server
-                  </span>
-                </div>
-              </div>
-
-              <ul className="list-disc ml-10">
-                <li>Engaged in various Research and Development tasks</li>
-                <li>Responsible for Front-end design</li>
-                <li>Used Javascript for better client side experience</li>
-                <li>Actively participated in Knowledge sharing-sessions</li>
-              </ul>
+          <nav>
+            <div className="flex flex-row flex-grow">
+              {tabs.map((tab, index) => (
+                <React.Fragment key={index}>
+                  {returnAnchorTag(tab)}
+                </React.Fragment>
+              ))}
             </div>
-
-            {/* Section Junior Engineer */}
-            <div className="inline-block">
-              <div className="ml-4">
-                <span className="text-xl">Junior Software Engineer </span>
-                <span className="italic text-sm text-gray-500">
-                  June-2016 - August-2017
-                </span>
-                <div className="font-semibold">
-                  Technologies used:{' '}
-                  <span className="font-light">
-                    ASP.NET, JQuery, Microsoft SQL Server
-                  </span>
-                </div>
-              </div>
-
-              <ul className="list-disc ml-10 pt-4 w-[600px]">
-                <li>
-                  Member of Xamarin Mobile application team and developed
-                  android application increasing customer access to the product
-                  by 70%.
-                </li>
-                <li>
-                  Refactor the code and converted server side code to client
-                  side making the application 80% faster and more responsive.
-                </li>
-                <li>
-                  Took part in Knowledge sharing session and participated in
-                  sharing the knowledge among the whole team about Xamarin
-                  Mobile application development
-                </li>
-                <li>
-                  Administrated the Team Foundation Server which leads to 100%
-                  productivity among the whole team.
-                </li>
-              </ul>
-            </div>
-
-            {/* Section Software Engineer */}
-            <div className="flex flex-col ">
-              <div className="ml-4">
-                <span className="text-xl">Software Engineer </span>
-                <span className="italic text-sm text-gray-500">
-                  September-2017 - September-2019
-                </span>
-                <div className="flex flex-row flex-wrap w-[550px] gap-x-1">
-                  <div className="inline-block">
-                    <span className="font-semibold mr-2">
-                      Technologies used:
-                    </span>
-                    <span className="font-light">
-                      ASP.NET, JQuery, Microsoft SQL Server, Xamarin, SOAP
-                      Web-services, Team Foundation Server
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <ul className="list-disc ml-10 pt-4 w-[600px]">
-                <li>
-                  Developed & deployed a Web application using ASP.NET framework
-                  and SQL database as backend with JavaScript as a client-side,
-                  resulting in an estimated 15% decrease in development time.
-                </li>
-                <li>
-                  Fully converted the Xamarin android application to Xamarin
-                  Forms application. Making the application 60% more reachable
-                  to platform users other than android.
-                </li>
-                <li>Actively participated in Research and Development tasks</li>
-                <li>
-                  Lead the team of 2 members for the development of Xamarin
-                  Mobile Application development
-                </li>
-                <li>
-                  Spearheaded the development of 2 Xamarin C# mobile
-                  applications, increasing customer access to products by 35%.
-                </li>
-                <li>
-                  Developed Xamarin.Forms application with more generalized code
-                  and less platform specific functionality which results in 50%
-                  faster shipping of the application.
-                </li>
-                <li>
-                  Developed RestAPI’s as well as Web-services for data fetching
-                  purposes in collaboration with async technique.
-                </li>
-                <li>
-                  Mentored developers to ensure the successful completion &
-                  deployment of apps across Android platforms within 8 weeks
-                </li>
-                <li>
-                  Directed maintenance & optimization activities for 2 existing
-                  mobile applications, resulting in a 30% decrease in user
-                  complaints.
-                </li>
-                <li>
-                  Successfully implemented iterations of quality assurance tests
-                  to ensure high performance and user satisfaction, improving
-                  reliability by 95%.
-                </li>
-                <li>Used Javascript for better client side experience</li>
-                <li>Actively participated in Knowledge sharing-sessions</li>
-              </ul>
-            </div>
+          </nav>
+          <div className="py-5 w-[70%]">
+            {activeTab === '#Mara' && <Mara />}
+            {activeTab === '#Softronic' && <Softronic />}
           </div>
         </div>
-        <div className="w-[30%] flex-none">
+        <div className="w-[30%] flex-none fixed right-0 top-32">
           <div className="flex flex-col gap-y-4">
             <span className="text-2xl">Overall Skills</span>
             <ul className="list-disc ml-10">
               <li>C#</li>
+              <li>Javascript</li>
+              <li>React.Js</li>
+              <li>Next.Js</li>
+              <li>Tailwind CSS</li>
+              <li>Typescript</li>
               <li>Python</li>
               <li>R</li>
-              <li>React Js</li>
-              <li>Next Js</li>
               <li>Xamarin Forms</li>
-              <li>Tailwind CSS</li>
             </ul>
           </div>
         </div>
