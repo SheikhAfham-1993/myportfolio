@@ -1,33 +1,40 @@
 import Hobbies from '@/components/aboutme/Hobbies'
 import Origins from '@/components/aboutme/Origins'
 import DefaultLayout from '@/defaultlayout/DefaultLayout'
+import Image from 'next/image'
 
 const AboutMe = () => {
   return (
     <DefaultLayout>
-      <div className="w-full flex-1">
-        <div className="flex items-end align-middle justify-start gap-x-2">
-          <span className="text-6xl">Hi!</span>
+      <div className="w-fit flex-1 justify-center">
+        <div className="grid grid-cols-1 lg:grid-cols-6 place-items-center border border-gray-300 rounded-xl p-5 bg-gray-300/25 gap-y-4 lg:gap-y-0">
+          <div className="col-span-4">
+            <div className="grid grid-cols-1 gap-y-2">
+              <div className="text-2xl lg:text-4xl text-black font-semibold">
+                <code>{'<Sheikh Afham Uddin/>'}</code>
+              </div>
+              <div className="text-lg text-black">
+                <code>
+                  Full-stack allrounder. Having hands-on experience in
+                  Javascript languages i.e. React.js. In addition to this years
+                  of experience in XAMARIN Cross-platform application
+                  development and ASP.NET web application development
+                </code>
+              </div>
+            </div>
+          </div>
+          <div className="col-span-2 flex w-full justify-center lg:justify-end">
+            <Image
+              key={Math.random()}
+              className="rounded-full"
+              src={'/afham.png'}
+              width={200}
+              height={200}
+              alt="Me"
+            />
+          </div>
         </div>
-        <div className="flex items-end align-middle justify-start gap-x-2">
-          <span className="text-5xl">My name is Sheikh Afham Uddin</span>
-        </div>
-        <div className="flex items-end align-middle justify-start gap-x-2 text-4xl">
-          <span>
-            I am a Software Developer and love to <code>{`<Code/>`}</code>
-          </span>
-        </div>
-        <div className="flex items-end align-middle justify-start gap-x-2 text-3xl">
-          <span>
-            Currently living in Germany and working as{' '}
-            <span className="italic">FrontEnd Developer</span> @{' '}
-            <span className="font-semibold underline">
-              <a href="https://www.mara-solutions.com/" target="_blank">
-                Mara Solutions GmbH
-              </a>
-            </span>
-          </span>
-        </div>
+        {/*  */}
         <br />
         <div className="flex flex-col space-y-2">
           <Origins />
