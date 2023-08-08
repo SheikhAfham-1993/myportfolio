@@ -1,7 +1,8 @@
-import './globals.css'
-import { Inter, Albert_Sans } from 'next/font/google'
+import { Albert_Sans } from 'next/font/google'
 import { classNames } from '@/lib/functions'
-const inter = Inter({ subsets: ['latin'] })
+import '../styles/global.css'
+
+import ThemeProviders from '@/components/Theme/ThemeProviders'
 const albert = Albert_Sans({ subsets: ['latin'] })
 
 export const metadata = {
@@ -12,8 +13,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={classNames(albert.className, 'bg-gray-100')}>
-        {children}
+      <body
+        className={classNames(albert.className, 'bg-gray-100 dark:bg-gray-800')}
+      >
+        <ThemeProviders>{children}</ThemeProviders>
       </body>
     </html>
   )
