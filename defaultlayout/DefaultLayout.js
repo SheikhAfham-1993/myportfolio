@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from 'react'
 import TopBar from '@/components/topBar/TopBar'
-import 'tippy.js/dist/tippy.css'
 import MobileSideBar from '@/components/topBar/MobileBar'
 import ToggleSwitch from '@/components/Switch/ToggleSwitch'
 const DefaultLayout = ({ children }) => {
@@ -19,7 +18,7 @@ const DefaultLayout = ({ children }) => {
           <MobileSideBar />
         </div>
       </div>
-      <main className="flex h-fit md:h-full flex-col items-center justify-between px-5 py-4 md:px-40 md:py-8">
+      <main className="flex h-fit items-center justify-center m-auto py-5">
         {children}
       </main>
     </>
