@@ -47,7 +47,7 @@ const Techstack = () => {
     },
     {
       id: Math.random(),
-      component: <span className="text-3xl font-bold">C#</span>,
+      component: <span className="text-3xl font-bold text-gray-200">C#</span>,
       tippyContent: 'C-Sharp',
     },
     {
@@ -68,9 +68,7 @@ const Techstack = () => {
   ]
   return (
     <div className="flex flex-col gap-y-4">
-      <span className="text-3xl dark:text-gray-200 font-semibold">
-        Tech-stack
-      </span>
+      <span className="text-3xl text-gray-200 font-semibold">Tech-stack</span>
       <div className="flex flex-row flex-wrap w-full gap-6">
         {techStack.map((stack) => (
           <Tippy key={stack.id} content={stack.tippyContent} placement="bottom">

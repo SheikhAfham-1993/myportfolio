@@ -59,41 +59,39 @@ const Professional = () => {
   }
 
   return (
-    <DefaultLayout>
-      <div className="flex flex-row w-full relative">
-        <div className="w-[70%] flex-1">
-          <nav>
-            <div className="flex flex-row flex-grow">
-              {tabs.map((tab, index) => (
-                <React.Fragment key={index}>
-                  {returnAnchorTag(tab)}
-                </React.Fragment>
-              ))}
-            </div>
-          </nav>
-          <div className="py-5 w-[70%]">
-            {activeTab === '#Mara' && <Mara />}
-            {activeTab === '#Softronic' && <Softronic />}
+    <div className="flex flex-row w-full relative">
+      <div className="w-[70%] flex-1">
+        <nav>
+          <div className="flex flex-row flex-grow">
+            {tabs.map((tab, index) => (
+              <React.Fragment key={index}>
+                {returnAnchorTag(tab)}
+              </React.Fragment>
+            ))}
           </div>
-        </div>
-        <div className="w-[30%] flex-none fixed right-0 top-32">
-          <div className="flex flex-col gap-y-4">
-            <span className="text-2xl">Overall Skills</span>
-            <ul className="list-disc ml-10">
-              <li>C#</li>
-              <li>Javascript</li>
-              <li>React.Js</li>
-              <li>Next.Js</li>
-              <li>Tailwind CSS</li>
-              <li>Typescript</li>
-              <li>Python</li>
-              <li>R</li>
-              <li>Xamarin Forms</li>
-            </ul>
-          </div>
+        </nav>
+        <div className="py-5 w-[70%]">
+          {activeTab === '#Mara' && <Mara />}
+          {activeTab === '#Softronic' && <Softronic />}
         </div>
       </div>
-    </DefaultLayout>
+      <div className="w-[30%] flex-none fixed right-0 top-32">
+        <div className="flex flex-col gap-y-4">
+          <span className="text-2xl">Overall Skills</span>
+          <ul className="list-disc ml-10">
+            <li>C#</li>
+            <li>Javascript</li>
+            <li>React.Js</li>
+            <li>Next.Js</li>
+            <li>Tailwind CSS</li>
+            <li>Typescript</li>
+            <li>Python</li>
+            <li>R</li>
+            <li>Xamarin Forms</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   )
 }
 
