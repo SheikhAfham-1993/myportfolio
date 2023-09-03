@@ -15,7 +15,7 @@ const AboutMe = () => {
             <code>{'<Sheikh Afham Uddin/>'}</code>
           </div>
           <div className="flex-1 flex flex-row justify-start md:justify-end space-x-3 items-end">
-            <code>Experience</code>
+            <code>Over</code>
             <CountUp
               delay={0}
               start={0}
@@ -30,7 +30,7 @@ const AboutMe = () => {
                 </div>
               )}
             </CountUp>
-            <code>years</code>
+            <code>years of experience</code>
           </div>
         </div>
       </div>
