@@ -13,8 +13,12 @@ const TopBar = () => {
   ]
 
   const setShowContactHandler = () => {
+    setShowContact(true)
+  }
+  const setCloseContactHandler = () => {
     setShowContact(false)
   }
+
   return (
     <div className="flex w-full justify-center px-5 sm:px-14">
       <div className="flex flex-row justify-end w-full gap-x-2 sm:gap-x-4 text-gray-500 lg:font-medium max-w-4xl">
@@ -34,7 +38,7 @@ const TopBar = () => {
           </div>
         ))}
       </div>
-      <Modal onClose={setShowContactHandler} showModal={showContact} />
+      <Modal onClose={setCloseContactHandler} showModal={showContact} />
     </div>
   )
 }
