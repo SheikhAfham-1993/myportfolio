@@ -47,11 +47,6 @@ const Techstack = () => {
     },
     {
       id: Math.random(),
-      component: <span className="text-3xl font-bold text-gray-200">C#</span>,
-      tippyContent: 'C-Sharp',
-    },
-    {
-      id: Math.random(),
       component: <SQLLogo />,
       tippyContent: 'SQL',
     },
@@ -67,15 +62,15 @@ const Techstack = () => {
     },
   ]
   return (
-    <div className="flex flex-col gap-y-4">
-      <span className="text-3xl text-gray-200 font-semibold">Tech-stack</span>
-      <div className="flex flex-row flex-wrap w-full gap-6">
+    <div className="flex flex-col gap-y-2">
+      <code className="text-2xl text-gray-700 font-semibold">Tech-stack</code>
+      <ul className="list-disc px-5">
         {techStack.map((stack) => (
-          <Tippy key={stack.id} content={stack.tippyContent} placement="bottom">
-            <div className="cursor-pointer">{stack.component}</div>
-          </Tippy>
+          <li key={stack.id} className="cursor-pointer">
+            <code>{stack.tippyContent}</code>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   )
 }

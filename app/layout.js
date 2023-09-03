@@ -13,16 +13,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={classNames(albert.className, 'bg-gray-800')}>
-        <div className="w-full bg-gray-900 h-[50px] sticky top-0 shadow-lg shadow-transparent px-5 text-white flex items-center z-50">
-          <div className="w-full flex-1 justify-start space-x-4 hidden lg:flex">
-            <TopBar />
-          </div>
-          <div className="w-full flex-1 justify-start space-x-4 flex lg:hidden">
-            <MobileSideBar />
-          </div>
-        </div>
-        <main className="flex h-fit items-center justify-center m-auto py-5">
+      <body className={classNames(albert.className, 'bg-gray-50')}>
+        <main className="max-w-4xl flex h-fit items-center justify-center m-auto py-10 px-10 md:px-0">
           {children}
         </main>
       </body>

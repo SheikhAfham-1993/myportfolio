@@ -1,4 +1,3 @@
-import DefaultLayout from '@/defaultlayout/DefaultLayout'
 import React from 'react'
 
 const Me = () => {

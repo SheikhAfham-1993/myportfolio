@@ -3,7 +3,6 @@
 import React, { useState } from 'react'
 import Mara from '@/components/Professional/Mara'
 import Softronic from '@/components/Professional/Softronic'
-import DefaultLayout from '@/defaultlayout/DefaultLayout'
 import { classNames } from '@/lib/functions'
 
 const Professional = () => {
