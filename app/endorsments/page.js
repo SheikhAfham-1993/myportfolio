@@ -1,15 +1,15 @@
 import React from 'react'
 import myEndorsments from '@/json/myEndorsments.json'
-import EndorserBox from '@/components/EndorserBox'
+import Section from '@/components/SectionComp/Section'
 
 const Endrosments = () => {
   return (
-    <section className="border-b border-dashed border-gray-800 py-5 px-6">
-      <div className="flex flex-col space-y-2">
-        <code className="text-3xl text-gray-700 font-semibold">
-          Colleagues I worked with...
+    <Section>
+      <div className="flex flex-col gap-y-6 max-w-4xl">
+        <code className="text-2xl md:text-4xl text-gray-700 font-semibold">
+          {'<Colleagues I worked with />'}
         </code>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {myEndorsments.slice(0, 4).map((references, index) => (
             <div key={index}>
               <code className="font-semibold">{references.endorser}</code>
@@ -21,12 +21,12 @@ const Endrosments = () => {
         <div className="flex w-full justify-end">
           <code className="text-blue-600 underline">
             <a target="_blank" href="https://www.linkedin.com/in/afham-sheikh">
-              See all
+              +{myEndorsments.length - 1} more
             </a>
           </code>
         </div>
       </div>
-    </section>
+    </Section>
   )
 }
 

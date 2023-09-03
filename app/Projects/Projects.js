@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-
+import Section from '@/components/SectionComp/Section'
 const Projects = () => {
   let projects = [
     {
@@ -26,17 +26,19 @@ const Projects = () => {
       description:
         'People.Partners mobile app acts as an extension to the unique HR and Payroll System, People.Partners (Human Capital Management System).',
       link: 'https://people.partners/',
-      bgColor: 'bg-gray-100',
+      bgColor: 'bg-gray-200',
       stack:
         "ASP.NET, Xamarin.Forms, Xamarin.Android, SQL SERVER, Team Foundation Server, Web-services & Web API's",
     },
   ]
 
   return (
-    <section className="border-b border-dashed border-gray-800 py-5 px-6">
-      <div className="flex flex-col gap-y-4">
-        <code className="text-3xl text-gray-700 font-semibold">Projects</code>
-        <div className="grid grid-cols-1  md:flex  md:flex-row  md:flex-wrap gap-y-4 md:gap-x-6 ">
+    <Section>
+      <div className="flex flex-col gap-y-6 max-w-4xl">
+        <code className="text-2xl md:text-4xl text-gray-700 font-semibold">
+          {'<Projects />'}
+        </code>
+        <div className="grid grid-cols-1 md:flex md:flex-row md:flex-wrap gap-y-4 md:gap-x-10">
           {projects.map((project) => (
             <Link
               key={project.id}
@@ -76,7 +78,7 @@ const Projects = () => {
           ))}
         </div>
       </div>
-    </section>
+    </Section>
   )
 }
 export default Projects

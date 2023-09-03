@@ -3,29 +3,40 @@ import Techstack from './Techstack/Techstack'
 import Projects from './Projects/Projects'
 import Endrosments from './endorsments/page'
 import CountUp from 'react-countup'
+import Section from '@/components/SectionComp/Section'
+import Footer from '@/components/Footer/Footer'
 
 const AboutMe = () => {
   return (
     <div className="w-full flex flex-col">
-      <div className="flex flex-row px-6">
-        <div className="text-4xl text-gray-700 font-semibold ">
-          <code>{'<Sheikh Afham Uddin/>'}</code>
-        </div>
-        <div className="flex-1 flex flex-row justify-end space-x-3 items-center">
-          <code>Experience</code>
-          <CountUp start={0} end={4.5} decimals={1} decimal="." duration={4}>
-            {({ countUpRef }) => (
-              <div className="text-xl">
-                <code ref={countUpRef} />
-              </div>
-            )}
-          </CountUp>
-          <code>years</code>
+      <div className="flex justify-center w-full px-14">
+        <div className="w-full grid grid-cols-1 md:flex md:flex-row max-w-4xl">
+          <div className="text-2xl md:text-4xl text-gray-700 font-semibold ">
+            <code>{'<Sheikh Afham Uddin/>'}</code>
+          </div>
+          <div className="flex-1 flex flex-row justify-start md:justify-end space-x-3 items-end">
+            <code>Experience</code>
+            <CountUp
+              delay={0}
+              start={0}
+              end={5.5}
+              decimals={1}
+              decimal="."
+              duration={4}
+            >
+              {({ countUpRef }) => (
+                <div>
+                  <code className="text-2xl" ref={countUpRef} />
+                </div>
+              )}
+            </CountUp>
+            <code>years</code>
+          </div>
         </div>
       </div>
 
-      <section className="border-b border-dashed border-gray-800 py-5 px-6">
-        <div className="grid grid-cols-1 md:flex md:flex-row space-y-3 md:space-y-0 space-x-0 md:space-x-3">
+      <Section>
+        <div className="grid grid-cols-1 md:flex md:flex-row space-y-3 md:space-y-0 space-x-0 md:space-x-3 max-w-4xl">
           <div className="flex-1 border border-gray-300 rounded-xl bg-gray-400/25 p-5">
             <div className="col-span-6">
               <div className="grid grid-cols-1 gap-y-2">
@@ -44,9 +55,11 @@ const AboutMe = () => {
             <Techstack />
           </div>
         </div>
-      </section>
+      </Section>
       <Projects />
       <Endrosments />
+
+      <Footer />
     </div>
   )
 }
