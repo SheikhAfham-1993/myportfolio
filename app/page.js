@@ -9,7 +9,7 @@ import Footer from '@/components/Footer/Footer'
 const AboutMe = () => {
   return (
     <div className="w-full flex flex-col">
-      <div className="flex justify-center w-full px-14">
+      <div className="flex justify-center w-full px-5 sm:px-14">
         <div className="w-full grid grid-cols-1 md:flex md:flex-row max-w-4xl">
           <div className="text-2xl md:text-4xl text-gray-700 font-semibold ">
             <code>{'<Sheikh Afham Uddin/>'}</code>

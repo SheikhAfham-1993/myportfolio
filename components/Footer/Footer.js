@@ -28,7 +28,7 @@ const Footer = () => {
   ]
   const date = new Date()
   return (
-    <div className="flex w-full justify-center px-14">
+    <div className="flex w-full justify-center px-5 sm:px-14">
       <div className="flex flex-col w-full max-w-4xl py-5">
         <code className="text-lg">
           {weekday[date.getDay()]}, {date.getDate()} {month[date.getMonth()]}
