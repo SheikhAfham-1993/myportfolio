@@ -38,7 +38,7 @@ const Projects = () => {
         <code className="text-2xl md:text-4xl text-gray-700 font-semibold">
           {'<Projects />'}
         </code>
-        <div className="grid grid-cols-1 md:flex md:flex-row md:flex-wrap gap-y-4 md:gap-x-10">
+        <div className="grid grid-cols-1 md:flex md:flex-row md:flex-wrap gap-y-10 md:gap-y-4 md:gap-x-10">
           {projects.map((project) => (
             <Link
               key={project.id}
@@ -59,7 +59,9 @@ const Projects = () => {
                 <div className="flex flex-col justify-start gap-y-2">
                   <code className="text-2xl text-gray-700 font-semibold">
                     {project.title}
-                    <code className="text-base">{project.subtext}</code>
+                    <code className="text-sm md:text-base">
+                      {project.subtext}
+                    </code>
                   </code>
 
                   <code className="text-md text-gray-600">
