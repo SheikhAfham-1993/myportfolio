@@ -13,7 +13,7 @@ const TopBar = () => {
   ]
 
   const setShowContactHandler = () => {
-    setShowContact((prevState) => !prevState)
+    setShowContact(false)
   }
   return (
     <div className="flex w-full justify-center px-5 sm:px-14">
