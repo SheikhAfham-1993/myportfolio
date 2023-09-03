@@ -38,7 +38,7 @@ const Projects = () => {
             key={project.id}
             href={project.link}
             target="_blank"
-            className="w-full flex flex-col rounded-lg gap-y-3 hover:scale-105 transition duration-500"
+            className="w-full flex flex-col rounded-lg gap-y-3 hover:scale-105 duration-500"
           >
             <div
               className={`flex justify-center flex-1 ${project.bgColor} py-10 rounded-t-lg`}
