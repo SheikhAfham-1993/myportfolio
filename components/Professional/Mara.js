@@ -2,7 +2,7 @@ import { ArrowDownIcon } from '@heroicons/react/24/solid'
 import Tippy from '@tippyjs/react'
 const Mara = () => {
   return (
-    <div className="flex flex-col gap-y-4">
+    <div className="flex flex-col gap-y-4 max-w-4xl justify-center w-full px-5 sm:px-14">
       <div className="text-3xl font-semibold flex flex-row items-center space-x-3">
         <code>Mara Solutions</code>
       </div>

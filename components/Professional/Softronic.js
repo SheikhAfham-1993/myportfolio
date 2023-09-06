@@ -3,7 +3,7 @@ import Tippy from '@tippyjs/react'
 
 const Softronic = () => {
   return (
-    <div className="flex flex-col gap-y-4">
+    <div className="flex flex-col gap-y-4 max-w-4xl justify-center w-full px-5 sm:px-14">
       <div className="text-3xl font-semibold flex flex-row items-center space-x-3">
         <code>Softronic Systems Pvt. Ltd</code>
       </div>
@@ -11,7 +11,7 @@ const Softronic = () => {
       {/* Section Software Engineer */}
       <div className="flex flex-col ">
         <div>
-          <code className="text-2xl text-gray-700">Software Engineer </code>
+          <code className="text-2xl text-gray-700">Software Engineer</code>
           <code className="italic text-lg text-gray-600 ml-2 font-normal">
             (September-2017 - September-2019)
           </code>
@@ -28,7 +28,7 @@ const Softronic = () => {
           </div>
         </div>
 
-        <ul className="list-disc ml-10 pt-4">
+        <ul className="list-disc ml-10 pt-4 space-y-2">
           <li>
             <code className="text-lg leading-normal">
               Developed & deployed a Web application using ASP.NET framework and
@@ -109,7 +109,9 @@ const Softronic = () => {
       {/* Section Junior Engineer */}
       <div className="inline-block">
         <div className="ml-4">
-          <code className="text-xl">Junior Software Engineer </code>
+          <code className="text-2xl text-gray-700">
+            Junior Software Engineer
+          </code>
           <code className="italic text-lg text-gray-600 ml-2 font-normal">
             (June-2016 - August-2017)
           </code>
@@ -123,7 +125,7 @@ const Softronic = () => {
           </div>
         </div>
 
-        <ul className="list-disc ml-10 pt-4">
+        <ul className="list-disc ml-10 pt-4 space-y-2">
           <li>
             <code className="text-lg leading-normal">
               Member of Xamarin Mobile application team and developed android
@@ -154,7 +156,7 @@ const Softronic = () => {
       {/* Section Internship */}
       <div className="inline-block">
         <div className="ml-4">
-          <code className="text-xl">Internship </code>
+          <code className="text-2xl text-gray-700">Internship</code>
           <code className="italic text-lg text-gray-600 ml-2 font-normal">
             (Feb-2016 - May-2016)
           </code>
@@ -168,7 +170,7 @@ const Softronic = () => {
           </div>
         </div>
 
-        <ul className="list-disc ml-10">
+        <ul className="list-disc ml-10 pt-4 space-y-2">
           <li>
             <code className="text-lg leading-normal">
               Engaged in various Research and Development tasks{' '}
