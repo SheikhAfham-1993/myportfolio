@@ -4,52 +4,62 @@ const Mara = () => {
   return (
     <div className="flex flex-col gap-y-4">
       <div className="text-3xl font-semibold flex flex-row items-center space-x-3">
-        <span>Mara Solutions</span>
-        <Tippy content={'From recent to old'}>
-          <ArrowDownIcon className="inline-block h-5 w-5 focus:outline-none" />
-        </Tippy>
+        <code>Mara Solutions</code>
       </div>
 
       {/* React and Next js Developer */}
-      <div className="flex flex-col ">
-        <div className="ml-4">
-          <span className="text-2xl">React and Next Developer</span>
-          <span className="italic text-sm text-gray-600 ml-2">
-            July-2022 - Present
-          </span>
+      <div className="flex flex-col">
+        <div>
+          <code className="text-2xl text-gray-700">Front-End Engineer</code>
+          <code className="italic text-lg text-gray-600 ml-2 font-normal">
+            (July-2022 - Present)
+          </code>
           <div className="flex flex-row flex-wrap w-full gap-x-1 pt-3">
             <div className="inline-block">
-              <span className="font-semibold mr-2">Technologies used:</span>
-              <span className="font-light">
-                React.js, Next.js, AWS Amplify, Cypress, Github, Sentry
-              </span>
+              <code className="font-semibold mr-2 text-lg">
+                Technologies used:
+              </code>
+              <code className="text-lg">
+                React.js, Next.js, AWS Amplify, Cypress, Storybook, Github,
+                Sentry
+              </code>
             </div>
           </div>
         </div>
 
-        <ul className="list-disc ml-10 pt-4 w-[800px]">
+        <ul className="list-disc ml-10 pt-4 space-y-2">
           <li>
-            Developed Front-end application that allows user to enter reviews
-            and AI tool will auto-generate response similar to human, increasing
-            the productivity to 60%.
+            <code className="text-lg leading-normal">
+              Developed Front-end application that allows user to enter reviews
+              and AI tool will auto-generate response similar to human,
+              increasing the productivity to 60%.
+            </code>
           </li>
           <li>
-            Developed the enhanced version (v2.0), for better client-side
-            experience. Enhancing the user experience level and further increase
-            in productivity to 80%.
+            <code className="text-lg leading-normal">
+              Developed the enhanced version (v2.0), for better client-side
+              experience. Enhancing the user experience level and further
+              increase in productivity to 80%.
+            </code>
           </li>
           <li>
-            Developed components for code readibilty and clean project
-            architecture. Increasing development productivity to 80%.
+            <code className="text-lg leading-normal">
+              Developed components for code readibilty and clean project
+              architecture. Increasing development productivity to 80%.
+            </code>
           </li>
           <li>
-            Integrated Cypress test tool for E2E testing. For detecting early
-            errors and therefore error free features to production build.
+            <code className="text-lg leading-normal">
+              Integrated Cypress test tool for E2E testing. For detecting early
+              errors and therefore error free features to production build.
+            </code>
           </li>
           <li>
-            Integrated TailwindCSS for designing the application and further
-            enhanced user experience by utilizing different media queries for
-            different sizes.
+            <code className="text-lg leading-normal">
+              Integrated TailwindCSS for designing the application and further
+              enhanced user experience by utilizing different media queries for
+              different sizes.
+            </code>
           </li>
         </ul>
       </div>
@@ -57,33 +67,45 @@ const Mara = () => {
       {/* Section Working Student */}
       <div className="inline-block">
         <div className="ml-4">
-          <span className="text-2xl">Working Student</span>
-          <span className="italic text-sm text-gray-600 ml-2">
-            Feb-2021 - June-2022
-          </span>
-          <div className="font-semibold pt-3">
-            Technologies used:{' '}
-            <span className="font-light">
-              R-Shiny, PostgresSQL, JavaScript, R-Shiny tests, Docker, Github,
-              Visual Studio Code
-            </span>
+          <code className="text-2xl">Working Student</code>
+          <code className="italic text-lg text-gray-600 ml-2 font-normal">
+            (Feb-2021 - June-2022)
+          </code>
+          <div className="pt-3">
+            <code className="font-semibold mr-2 text-lg">
+              Technologies used:
+            </code>
+            <code className="text-lg">
+              R-Shiny, PostgresSQL, JavaScript, R-Shiny tests, Github, Visual
+              Studio Code
+            </code>
           </div>
         </div>
 
-        <ul className="list-disc ml-10">
-          <li>Developed R-shiny dashboard</li>
+        <ul className="list-disc ml-10 space-y-2">
           <li>
-            Written sql queries on PostgresSQL for fetching data and displaying
-            them on R-Shiny dashboard
+            <code className="text-lg leading-normal">
+              Developed R-shiny dashboard{' '}
+            </code>
           </li>
           <li>
-            Researched and applied new libraries for better performance and
-            exquisite client-side experience (successfull in decreasing response
-            time by 30%)
+            <code className="text-lg leading-normal">
+              Written sql queries on PostgresSQL for fetching data and
+              displaying them on R-Shiny dashboard
+            </code>
           </li>
           <li>
-            Converted server-side code to JavaScript in R-Shiny for reduced
-            server-side calls
+            <code className="text-lg leading-normal">
+              Researched and applied new libraries for better performance and
+              exquisite client-side experience (successfull in decreasing
+              response time by 30%)
+            </code>
+          </li>
+          <li>
+            <code className="text-lg leading-normal">
+              Converted server-side code to JavaScript in R-Shiny for reduced
+              server-side calls
+            </code>
           </li>
         </ul>
       </div>

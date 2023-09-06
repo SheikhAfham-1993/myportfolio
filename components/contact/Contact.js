@@ -24,6 +24,11 @@ const Contact = () => {
           className="px-3 py-2 border border-gray-700 rounded-lg bg-gray-100 text-gray-700"
         ></textarea>
       </div>
+      <div className="w-full flex flex-row justify-end">
+        <button className="bg-gray-700 text-white rounded-lg w-fit px-3 py-2">
+          <code>Contact me</code>
+        </button>
+      </div>
     </div>
   )
 }

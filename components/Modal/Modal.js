@@ -45,14 +45,14 @@ const Modal = ({ showModal, onClose }) => {
                 leaveTo="opacity-0 scale-95"
               >
                 <Dialog.Panel
-                  className={`w-full lg:w-2/3 px-6 py-4 transform rounded-2xl bg-gray-200  text-left align-middle shadow-xl transition-all`}
+                  className={`w-full lg:w-2/5 px-6 py-4 transform rounded-2xl bg-gray-200  text-left align-middle shadow-xl transition-all`}
                 >
                   <Dialog.Title
                     as="h3"
                     className="text-lg font-bold leading-6 text-gray-700 pb-5"
                   >
                     <div className="flex flex-row">
-                      <code className="flex-none">Get in touch</code>
+                      <code className="flex-none text-xl">Get in touch</code>
                       <div className="flex-1 flex justify-end">
                         <XCircleIcon
                           onClick={closeModal}

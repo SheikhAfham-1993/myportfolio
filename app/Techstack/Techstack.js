@@ -66,7 +66,7 @@ const Techstack = () => {
       <code className="text-2xl text-gray-700 font-semibold">Tech-stack</code>
       <ul className="list-disc px-5">
         {techStack.map((stack) => (
-          <li key={stack.id} className="cursor-pointer">
+          <li key={stack.id} className="cursor-pointer text-lg font-normal">
             <code>{stack.tippyContent}</code>
           </li>
         ))}
