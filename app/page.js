@@ -58,8 +58,6 @@ const AboutMe = () => {
       </Section>
       <Projects />
       <Endrosments />
-
-      <Footer />
     </div>
   )
 }

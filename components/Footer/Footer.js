@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import dynamic from 'next/dynamic'
 const Clock = dynamic(() => import('react-live-clock'), { ssr: false })
