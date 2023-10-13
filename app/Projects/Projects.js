@@ -44,7 +44,7 @@ const Projects = () => {
               target="_blank"
               className="w-full flex-1 flex flex-col rounded-lg gap-y-3"
             >
-              <div
+              {/* <div
                 className={`flex justify-center flex-none ${project.bgColor} py-8 rounded-t-lg h-28`}
               >
                 <img
@@ -52,7 +52,7 @@ const Projects = () => {
                   src={project.src}
                   className={`object-contain rounded-t-lg w-[260px]`}
                 />
-              </div>
+              </div> */}
               <div className="flex flex-col items-start justify-start gap-y-3">
                 <div className="flex flex-col justify-start gap-y-2">
                   <code className="text-3xl text-gray-700 font-semibold">
