@@ -30,21 +30,22 @@ const Certifications = () => {
       <div className="flex w-full justify-center">
         <div className="max-w-4xl flex flex-1 justify-start px-5 sm:px-14">
           <code className="text-2xl md:text-4xl text-gray-700 font-semibold">
-            {'<Projects />'}
+            {'<Certificates />'}
           </code>
         </div>
       </div>
 
       <div className="w-full flex justify-center">
-        <div className="max-w-4xl flex flex-1 justify-start px-5 sm:px-14 flex-row  gap-x-5">
+        <div className="max-w-4xl flex flex-1 justify-start px-5 sm:px-14 flex-col md:flex-row gap-x-5 gap-y-4 md:gap-y-0">
           {certificateList.map((certificate) => (
             <Link
               key={certificate.id}
               className="cursor-pointer"
               href={certificate.credentials}
+              target="_blank"
             >
-              <div className="flex flex-col justify-start gap-y-3 w-[200px]">
-                <div className="h-[150px] w-[200px] flex flex-col items-center justify-center align-middle border border-gray-300 rounded-xl bg-gray-500">
+              <div className="flex flex-col justify-start gap-y-3 w-full md:w-[200px]">
+                <div className="h-[150px] w-full md:w-[200px] flex flex-col items-center justify-center align-middle border border-gray-300 rounded-xl bg-gray-500">
                   <Image
                     src={certificate.src}
                     width={150}
