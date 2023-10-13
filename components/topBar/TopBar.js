@@ -9,7 +9,7 @@ const TopBar = () => {
   const Links = [
     { href: '/', label: 'Home' },
     { href: '/professional', label: 'Experience' },
-    { href: '/contact', label: 'Contact' },
+    // { href: '/contact', label: 'Contact' },
   ]
 
   const setShowContactHandler = () => {
