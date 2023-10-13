@@ -5,19 +5,11 @@ import Link from 'next/link'
 import Modal from '../Modal/Modal'
 
 const TopBar = () => {
-  const [showContact, setShowContact] = useState(false)
   const Links = [
     { href: '/', label: 'Home' },
     { href: '/professional', label: 'Experience' },
-    // { href: '/contact', label: 'Contact' },
+    { href: '/certifications', label: 'Certificates' },
   ]
-
-  const setShowContactHandler = () => {
-    setShowContact(true)
-  }
-  const setCloseContactHandler = () => {
-    setShowContact(false)
-  }
 
   return (
     <div className="flex w-full justify-center px-5 sm:px-14">
@@ -27,18 +19,10 @@ const TopBar = () => {
             key={index}
             className="px-3 py-1 rounded-lg bg-gray-200 hover:bg-gray-400 hover:text-gray-50 text-gray-700"
           >
-            {link.label !== 'Contact' && (
-              <Link href={link.href}>{link.label}</Link>
-            )}
-            {link.label === 'Contact' && (
-              <div className="cursor-pointer" onClick={setShowContactHandler}>
-                {link.label}
-              </div>
-            )}
+            <Link href={link.href}>{link.label}</Link>
           </div>
         ))}
       </div>
-      <Modal onClose={setCloseContactHandler} showModal={showContact} />
     </div>
   )
 }
