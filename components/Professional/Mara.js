@@ -30,35 +30,70 @@ const Mara = () => {
         <ul className="list-disc ml-10 pt-4 space-y-2">
           <li>
             <code className="text-lg leading-normal">
-              Developed Front-end application that allows user to enter reviews
-              and AI tool will auto-generate response similar to human,
-              increasing the productivity to 60%.
+              Successfully developed an AI-powered web application using Next.js
+              and TailwindCSS facilitating automated reply generation for
+              reviews, significantly enhancing user engagement and satisfaction
             </code>
           </li>
           <li>
             <code className="text-lg leading-normal">
-              Developed the enhanced version (v2.0), for better client-side
-              experience. Enhancing the user experience level and further
-              increase in productivity to 80%.
+              Accomplished the intricate task of migrating the entire
+              application to the latest version of the Next.js framework.
             </code>
           </li>
           <li>
             <code className="text-lg leading-normal">
-              Developed components for code readibilty and clean project
-              architecture. Increasing development productivity to 80%.
+              Expertly utilized advanced features of TailwindCSS in designing a
+              responsive and intuitive user interface for the web application.
             </code>
           </li>
           <li>
             <code className="text-lg leading-normal">
-              Integrated Cypress test tool for E2E testing. For detecting early
-              errors and therefore error free features to production build.
+              Managed multiple GitHub repositories corresponding to different
+              branches, ensuring seamless and error-free deployment in the
+              production environment.
             </code>
           </li>
           <li>
             <code className="text-lg leading-normal">
-              Integrated TailwindCSS for designing the application and further
-              enhanced user experience by utilizing different media queries for
-              different sizes.
+              Efficiently transitioned the project from JavaScript to
+              TypeScript, enhancing code management and readability.
+            </code>
+          </li>
+          <li>
+            <code className="text-lg leading-normal">
+              Adopted Axios for effective execution of CRUD operations.
+            </code>
+          </li>
+          <li>
+            <code className="text-lg leading-normal">
+              Implemented JWT (JSON Web Tokens) for secure transmission of
+              information.
+            </code>
+          </li>
+          <li>
+            <code className="text-lg leading-normal">
+              Returned to and optimized the existing codebase through
+              comprehensive refactoring and integration of modern libraries
+              (including react-select, reactable, SWR).
+            </code>
+          </li>
+          <li>
+            <code className="text-lg leading-normal">
+              Devised various components for diverse scenarios, thereby
+              enhancing code readability and maintainability.
+            </code>
+          </li>
+          <li>
+            <code className="text-lg leading-normal">
+              Integrated Storybook framework for systematic documentation of
+              components.
+            </code>
+          </li>
+          <li>
+            <code className="text-lg leading-normal">
+              Deployed Cypress automation tests to verify system accuracy when
+              deploying via AWS Amplify
             </code>
           </li>
         </ul>
