@@ -12,12 +12,12 @@ const TopBar = () => {
   ]
 
   return (
-    <div className="flex w-full justify-center px-5 sm:px-14">
-      <div className="flex flex-row justify-end w-full gap-x-2 sm:gap-x-4 text-gray-500 lg:font-medium max-w-4xl">
+    <div className="w-full py-3 flex justify-end">
+      <div className="flex flex-row gap-x-2 sm:gap-x-4 text-gray-500 lg:font-medium py-2 px-5">
         {Links.map((link, index) => (
           <div
             key={index}
-            className="px-3 py-1 rounded-lg bg-gray-200 hover:bg-gray-400 hover:text-gray-50 text-gray-700"
+            className="px-3 py-1 rounded-lg bg-gray-200 hover:bg-blue-400 hover:text-white text-gray-700"
           >
             <Link href={link.href}>{link.label}</Link>
           </div>

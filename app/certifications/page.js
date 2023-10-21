@@ -26,9 +26,9 @@ const certificateList = [
 ]
 const Certifications = () => {
   return (
-    <div className="w-full flex flex-col space-y-6 border-b border-dashed border-gray-800 py-8 px-5 sm:px-14 justify-center">
+    <div className="w-full flex flex-col">
       <div className="flex w-full justify-center">
-        <div className="max-w-4xl flex flex-1 justify-start px-5 sm:px-14">
+        <div className=" flex flex-1 justify-start">
           <code className="text-2xl md:text-4xl text-gray-700 font-semibold">
             {'<Certificates />'}
           </code>
@@ -36,7 +36,7 @@ const Certifications = () => {
       </div>
 
       <div className="w-full flex justify-center">
-        <div className="max-w-4xl flex flex-1 justify-start px-5 sm:px-14 flex-col md:flex-row gap-x-5 gap-y-4 md:gap-y-0">
+        <div className=" flex flex-1 justify-start flex-col md:flex-row gap-x-5 gap-y-4 md:gap-y-0">
           {certificateList.map((certificate) => (
             <Link
               key={certificate.id}

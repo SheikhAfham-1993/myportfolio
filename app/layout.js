@@ -16,13 +16,18 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         suppressHydrationWarning={true}
-        className={classNames(albert.className, 'bg-gray-50')}
+        className={classNames(
+          albert.className,
+          'bg-gray-50 relative bg-background bg-fixed h-full'
+        )}
       >
-        <main className="w-full flex flex-col h-fit items-start justify-start m-auto py-10 space-y-6 sm:space-y-4">
-          <TopBar />
-          {children}
-          <Footer />
+        {/* <TopBar /> */}
+        <main className="w-full flex flex-row justify-center">
+          <div className=" flex flex-col items-center justify-center align-middle">
+            <div className="max-w-full md:max-w-5xl">{children}</div>
+          </div>
         </main>
+        <Footer />
       </body>
     </html>
   )
