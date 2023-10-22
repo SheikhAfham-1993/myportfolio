@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         suppressHydrationWarning={true}
         className={classNames(
           albert.className,
-          'bg-gray-50 relative bg-background bg-fixed h-full'
+          'relative bg-background bg-fixed h-full'
         )}
       >
         {/* <TopBar /> */}
