@@ -12,8 +12,8 @@ import Link from 'next/link'
 
 const Me = () => {
   return (
-    <div className="h-screen m-auto w-full flex justify-start align-middle items-center">
-      <div className="flex flex-col gap-y-4">
+    <div className="h-full md:h-screen m-auto w-full flex justify-center align-middle items-center">
+      <div className="flex flex-col gap-y-4 w-full">
         <Image
           width={80}
           height={80}
@@ -23,7 +23,9 @@ const Me = () => {
         />
         <div className="flex flex-col gap-y-2">
           <div className="flex items-center justify-start">
-            <span className="text-6xl text">Sheikh Afham Uddin</span>
+            <span className="text-3xl md:text-6xl text">
+              Sheikh Afham Uddin
+            </span>
           </div>
           <div className="flex items-center justify-start">
             <span className="text-3xl text">Front End Developer</span>

@@ -30,24 +30,24 @@ const Projects = () => {
   ]
 
   return (
-    <div className="flex flex-col space-y-8 h-screen">
-      <span className="text-6xl text">{'Projects'}</span>
+    <div className="flex flex-col space-y-5 md:space-y-8 h-screen">
+      <span className="text-3xl md:text-6xl text">{'Projects'}</span>
       {projects.map((project) => (
         <Link
           key={project.id}
           href={project.link}
           target="_blank"
-          className="w-full flex flex-col rounded-lg mt-5"
+          className="w-full flex flex-col rounded-lg"
         >
-          <div className="flex flex-row h-fit gap-x-8 border-2 border-blue-200 p-3 bg-gray-950 rounded-xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 h-fit gap-x-8 border-2 border-blue-200 p-3 bg-gray-950 rounded-xl">
             <Image
-              className="rounded-lg object-fill h-[240px]"
+              className="rounded-lg object-fill w-full h-[200px] md:h-[240px]"
               src={project.img}
               alt={project.title}
               width={400}
               height={150}
             ></Image>
-            <div className="flex flex-col justify-start">
+            <div className="flex flex-col justify-start mt-5 md:mt-0">
               <span className="text-2xl text">{project.title}</span>
               <span className="text-base text"> {project.description}</span>
 
@@ -61,7 +61,7 @@ const Projects = () => {
           </div>
         </Link>
       ))}
-      <span className="text-white">More coming soon</span>
+      <span className="text-white text-lg">More coming soon...</span>
     </div>
   )
 }
