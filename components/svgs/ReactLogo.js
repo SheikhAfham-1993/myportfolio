@@ -2,7 +2,7 @@ import React from 'react'
 const ReactLogo = () => {
   return (
     <svg
-      className="h-10 w-10"
+      className="h-5 w-5"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="-11.5 -10.23174 23 20.46348"
     >

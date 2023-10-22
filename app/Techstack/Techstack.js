@@ -16,61 +16,50 @@ import TypescriptLogo from '@/components/svgs/TypescriptLogo'
 const Techstack = () => {
   const techStack = [
     {
-      id: Math.random(),
-      component: <JavascriptLogo />,
-      tippyContent: 'Javascript',
+      icon: <ReactLogo />,
+      title: 'React',
     },
     {
-      id: Math.random(),
-      component: <TypescriptLogo />,
-      tippyContent: 'Typescript',
+      icon: <NextLogo />,
+      title: 'Next.js',
     },
     {
-      id: Math.random(),
-      component: <ReactLogo />,
-      tippyContent: 'React.js',
+      icon: <XamarinLogo />,
+      title: 'Xamarin',
     },
     {
-      id: Math.random(),
-      component: <NextLogo />,
-      tippyContent: 'Next.js',
+      icon: <PythonLogo />,
+      title: 'Python',
     },
     {
-      id: Math.random(),
-      component: <XamarinLogo />,
-      tippyContent: 'Xamarin',
+      icon: <SQLLogo />,
+      title: 'SQL',
     },
     {
-      id: Math.random(),
-      component: <PythonLogo />,
-      tippyContent: 'Python',
+      icon: <CypressLogo />,
+      title: 'Cypress',
     },
     {
-      id: Math.random(),
-      component: <SQLLogo />,
-      tippyContent: 'SQL',
-    },
-    {
-      id: Math.random(),
-      component: <CypressLogo />,
-      tippyContent: 'Cypress',
-    },
-    {
-      id: Math.random(),
-      component: <GithubLogo />,
-      tippyContent: 'Github',
+      icon: <GithubLogo />,
+      title: 'Github',
     },
   ]
   return (
-    <div className="flex flex-col gap-y-2">
-      <code className="text-2xl text-gray-700 font-semibold">Tech-stack</code>
-      <ul className="list-disc px-5">
-        {techStack.map((stack) => (
-          <li key={stack.id} className="cursor-pointer text-lg font-normal">
-            <code>{stack.tippyContent}</code>
-          </li>
-        ))}
-      </ul>
+    <div className="grid grid-cols-1 border border-blue-200 rounded-lg bg-gray-950 p-5 max-w-5xl">
+      <div className="flex flex-col justify-start gap-y-4">
+        <span className="text-2xl text">My Techstack</span>
+        <div className="grid grid-cols-6 gap-2">
+          {techStack.map((stack, index) => (
+            <div
+              key={index}
+              className="flex-none bg-gray-800 flex flex-row items-center px-3 py-2 rounded-lg"
+            >
+              {stack.icon}
+              <span className="ml-2 text-xl text">{stack.title}</span>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   )
 }

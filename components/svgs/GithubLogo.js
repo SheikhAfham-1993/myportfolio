@@ -4,7 +4,7 @@ const GithubLogo = () => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      className="h-10 w-10"
+      className="h-5 w-5"
       viewBox="-1.65 0 259.3 259.3"
       version="1.1"
       preserveAspectRatio="xMidYMid"

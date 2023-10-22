@@ -9,10 +9,10 @@ import Me from './me/page'
 
 const AboutMe = () => {
   return (
-    <>
+    <div className="grid grid-cols-1 gap-y-10">
       <Me />
       <Projects />
-    </>
+    </div>
   )
 }
 export default AboutMe

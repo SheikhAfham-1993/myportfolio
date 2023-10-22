@@ -39,57 +39,29 @@ const Projects = () => {
           target="_blank"
           className="w-full flex flex-col rounded-lg mt-5"
         >
-          <div className="flex flex-row h-fit gap-x-8">
+          <div className="flex flex-row h-fit gap-x-8 border-2 border-blue-200 p-3 bg-gray-950 rounded-xl">
             <Image
-              className="rounded-lg object-fill h-[250px]"
+              className="rounded-lg object-fill h-[240px]"
               src={project.img}
               alt={project.title}
               width={400}
               height={150}
             ></Image>
             <div className="flex flex-col justify-start">
-              <span className="text-3xl text">{project.title}</span>
-              <span className="text-lg text"> {project.description}</span>
+              <span className="text-2xl text">{project.title}</span>
+              <span className="text-base text"> {project.description}</span>
 
-              <div className="flex flex-col justify-start gap-y-2">
+              <div className="flex flex-col justify-start gap-y-1 mt-2">
                 <span className="text-2xl  font-semibold text">
                   Technologies
                 </span>
-                <span className="text-lg  text">{project.stack}</span>
+                <span className="text-base text">{project.stack}</span>
               </div>
             </div>
           </div>
         </Link>
       ))}
-      <div className="grid grid-cols-1 md:flex md:flex-row md:flex-wrap gap-y-10 md:gap-y-4 md:gap-x-10 opacity-0">
-        {projects.map((project) => (
-          <Link
-            key={project.id}
-            href={project.link}
-            target="_blank"
-            className="w-full flex-1 flex flex-col rounded-lg gap-y-3"
-          >
-            <div className="flex flex-col items-start justify-start gap-y-3">
-              <div className="flex flex-col justify-start gap-y-2">
-                <code className="text-3xl text-gray-700 font-semibold">
-                  {project.title}
-                </code>
-
-                <code className="text-lg text-gray-600">
-                  {project.description}
-                </code>
-              </div>
-
-              <div className="flex flex-col justify-start gap-y-2">
-                <code className="text-2xl text-gray-700 font-semibold">
-                  Technologies
-                </code>
-                <code className="text-lg text-gray-600">{project.stack}</code>
-              </div>
-            </div>
-          </Link>
-        ))}
-      </div>
+      <span className="text-white">More coming soon</span>
     </div>
   )
 }

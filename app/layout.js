@@ -24,10 +24,9 @@ export default function RootLayout({ children }) {
         {/* <TopBar /> */}
         <main className="w-full flex flex-row justify-center">
           <div className=" flex flex-col items-center justify-center align-middle">
-            <div className="max-w-full md:max-w-5xl">{children}</div>
+            <div className="w-full 2xl:max-w-5xl">{children}</div>
           </div>
         </main>
-        <Footer />
       </body>
     </html>
   )
