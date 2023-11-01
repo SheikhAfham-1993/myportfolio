@@ -23,17 +23,20 @@ const certificateList = [
     rights: 'Udemy',
     description: 'Udemy',
   },
+  {
+    id: Math.random(),
+    src: 'https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg',
+    title: 'React - The Complete Guide 2023 (Beginner + Advanced)',
+    credentials:
+      'https://www.udemy.com/certificate/UC-b9c19c58-9484-450f-86d6-29496bc889c6/',
+    rights: 'Udemy',
+    description: 'Udemy',
+  },
 ]
 const Certifications = () => {
   return (
-    <div className="w-full flex flex-col">
-      <div className="flex w-full justify-center">
-        <div className=" flex flex-1 justify-start">
-          <code className="text-2xl md:text-4xl text-gray-700 font-semibold">
-            {'<Certificates />'}
-          </code>
-        </div>
-      </div>
+    <div className="flex flex-col space-y-5 md:space-y-8 h-screen">
+      <span className="text-3xl md:text-4xl text">{'Certificates'}</span>
 
       <div className="w-full flex justify-center">
         <div className=" flex flex-1 justify-start flex-col md:flex-row gap-x-5 gap-y-4 md:gap-y-0">
@@ -54,9 +57,7 @@ const Certifications = () => {
                     alt=""
                   />
                 </div>
-                <span className="text-gray-500 font-semibold">
-                  {certificate.title}
-                </span>
+                <span className="text">{certificate.title}</span>
               </div>
             </Link>
           ))}

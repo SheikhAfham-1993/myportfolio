@@ -17,6 +17,18 @@ const Projects = () => {
     },
     {
       id: Math.random(),
+      img: '/Githubexplorer.png',
+      title: 'Github Explorer',
+      rights: 'Softronic systems',
+      description:
+        'Small application to search for public repositories on Github. The application uses the Github GraphQL API to fetch data from Github. The application also allows users to explore and filter repositories by language, stars, and more.',
+      link: 'https://people.partners/',
+      bgColor: 'bg-gray-200',
+      stack:
+        'React.js, Next.js, TailwindCSS, Github GraphQL, Storybook, Cypress',
+    },
+    {
+      id: Math.random(),
       img: '/softronic.png',
       title: 'People.Partners',
       rights: 'Softronic systems',
@@ -31,7 +43,7 @@ const Projects = () => {
 
   return (
     <div className="flex flex-col space-y-5 md:space-y-8 h-screen">
-      <span className="text-3xl md:text-6xl text">{'Projects'}</span>
+      <span className="text-3xl md:text-4xl text">{'Projects'}</span>
       {projects.map((project) => (
         <Link
           key={project.id}
@@ -39,7 +51,7 @@ const Projects = () => {
           target="_blank"
           className="w-full flex flex-col rounded-lg"
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 h-fit gap-x-8 border-2 border-blue-200 p-3 bg-gray-950 rounded-xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 h-fit gap-x-8  p-3 bg-gray-950 rounded-xl">
             <Image
               className="rounded-lg object-fill w-full h-[200px] md:h-[240px]"
               src={project.img}

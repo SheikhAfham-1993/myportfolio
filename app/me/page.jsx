@@ -16,16 +16,19 @@ const Me = () => {
           alt="Afham"
         />
         <div className="flex flex-col gap-y-2">
-          <div className="flex items-center justify-start">
-            <span className="text-3xl md:text-6xl text">
+          <div className="flex flex-col md:flex-row items-start md:items-end justify-start space-x-0 md:space-x-2">
+            <span className="text-3xl md:text-4xl text">
               Sheikh Afham Uddin
+            </span>
+            <span className="text-xl text">
+              (5 years of overall experience)
             </span>
           </div>
           <div className="flex items-center justify-start">
-            <span className="text-3xl text">Front End Developer</span>
+            <span className="text-xl text">Front End Developer</span>
           </div>
         </div>
-        <div className="flex flex-row justify-start space-x-4 items-center">
+        <div className="flex flex-row flex-wrap justify-start space-x-4 items-center">
           <Link
             href={'https://www.linkedin.com/in/afham-sheikh'}
             target="_blank"
@@ -35,7 +38,6 @@ const Me = () => {
               viewBox="0 0 24 24"
               data-supported-dps="24x24"
               className="fill-white"
-              class="mercado-match"
               width="32"
               height="32"
               focusable="false"
@@ -66,16 +68,16 @@ const Me = () => {
           >
             Download CV
           </button>
-          <span
+          {/* <span
             onClick={() =>
               window.open(
                 'https://drive.google.com/file/d/1WSNmFrUiglU03JeQzE2h-B3nn_dyV8oy/view?usp=share_link'
               )
             }
-            className="underline text-white"
+            className="underline text-white cursor-pointer"
           >
             Download German CV
-          </span>
+          </span> */}
         </div>
 
         <Techstack />
