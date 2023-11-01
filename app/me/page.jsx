@@ -25,7 +25,12 @@ const Me = () => {
             </span>
           </div>
           <div className="flex items-center justify-start">
-            <span className="text-xl text">Front End Developer</span>
+            <span className="text-xl text">
+              Full-stack allrounder. Having hands-on experience in Javascript
+              languages i.e. React.js and Next.js. In addition to this years of
+              experience in XAMARIN Cross-platform application development and
+              ASP.NET web application development
+            </span>
           </div>
         </div>
         <div className="flex flex-row flex-wrap justify-start space-x-4 items-center">

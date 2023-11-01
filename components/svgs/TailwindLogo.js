@@ -7,7 +7,7 @@ const TailwindLogo = () => {
       viewBox="0 0 54 33"
       className="h-5 w-5"
     >
-      <g clip-path="url(#prefix__clip0)">
+      <g clipPath="url(#prefix__clip0)">
         <path
           fill="#38bdf8"
           fill-rule="evenodd"
