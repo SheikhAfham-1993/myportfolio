@@ -53,7 +53,7 @@ const Projects = () => {
         >
           <div className="grid grid-cols-1 md:grid-cols-2 h-fit gap-x-8  p-3 bg-gray-950 rounded-xl">
             <Image
-              className="rounded-lg object-fill w-full h-[200px] md:h-[240px]"
+              className="rounded-lg object-scale-down w-full h-[200px] md:h-[240px]"
               src={project.img}
               alt={project.title}
               width={400}
