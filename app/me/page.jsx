@@ -64,11 +64,7 @@ const Me = () => {
             </svg>
           </Link>
           <button
-            onClick={() =>
-              window.open(
-                'https://drive.google.com/file/d/1y3MwyyVeAYdRQ_oAMAIKU_ve3wGNQKmQ/view?usp=share_link'
-              )
-            }
+            onClick={() => window.open(process.env.NEXT_PUBLIC_URL)}
             className="bg-white hover:bg-blue-600 px-5 py-2 rounded-full cursor-pointer hover:text-white font-semibold"
           >
             Download CV
