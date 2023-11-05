@@ -1,3 +1,5 @@
+import GithubLogo from '@/components/svgs/GithubLogo'
+import MaraLogo from '@/components/svgs/MaraLogo'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -5,7 +7,7 @@ const Projects = () => {
   let projects = [
     {
       id: Math.random(),
-      img: '/Mara.png',
+      img: <MaraLogo className="h-36 w-36" />,
       title: 'Review reply assistant',
       rights: 'Mara solutions',
       description:
@@ -17,7 +19,7 @@ const Projects = () => {
     },
     {
       id: Math.random(),
-      img: '/Githubexplorer.png',
+      img: <GithubLogo className="h-32 w-32" />,
       title: 'Github Explorer',
       rights: 'Softronic systems',
       description:
@@ -29,7 +31,11 @@ const Projects = () => {
     },
     {
       id: Math.random(),
-      img: '/softronic.png',
+      img: (
+        <span className="h-32 italic font-semibold text-white text-2xl py-10">
+          Softronic Systems
+        </span>
+      ),
       title: 'People.Partners',
       rights: 'Softronic systems',
       description:
@@ -44,35 +50,34 @@ const Projects = () => {
   return (
     <div className="flex flex-col space-y-5 md:space-y-8 h-screen">
       <span className="text-3xl md:text-4xl text">{'Projects'}</span>
-      {projects.map((project) => (
-        <Link
-          key={project.id}
-          href={project.link}
-          target="_blank"
-          className="w-full flex flex-col rounded-lg"
-        >
-          <div className="grid grid-cols-1 md:grid-cols-2 h-fit gap-x-8  p-3 bg-gray-950 rounded-xl">
-            <Image
-              className="rounded-lg object-scale-down w-full h-[200px] md:h-[240px]"
-              src={project.img}
-              alt={project.title}
-              width={400}
-              height={150}
-            ></Image>
-            <div className="flex flex-col justify-start mt-5 md:mt-0">
-              <span className="text-2xl text">{project.title}</span>
-              <span className="text-base text"> {project.description}</span>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {projects.map((project) => (
+          <Link
+            key={project.id}
+            href={project.link}
+            target="_blank"
+            className="w-full flex flex-col rounded-lg"
+          >
+            <div className="grid grid-cols-1 h-[250px] p-3 gap-y-2 bg-gray-950 rounded-xl">
+              <div className="flex justify-center items-center">
+                {project.img}
+              </div>
 
-              <div className="flex flex-col justify-start gap-y-1 mt-2">
-                <span className="text-2xl  font-semibold text">
-                  Technologies
-                </span>
-                <span className="text-base text">{project.stack}</span>
+              {/* <Image
+                className="rounded-lg object-cover md:object-fill w-full h-[180px]"
+                src={project.img}
+                alt={project.title}
+                width={400}
+                height={150}
+              ></Image> */}
+              <div className="flex flex-col justify-start space-y-2">
+                <span className="text-xl text">{project.title}</span>
+                <span className="text-sm text">{project.stack}</span>
               </div>
             </div>
-          </div>
-        </Link>
-      ))}
+          </Link>
+        ))}
+      </div>
       <span className="text-white text-lg">More coming soon...</span>
     </div>
   )

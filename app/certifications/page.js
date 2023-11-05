@@ -35,7 +35,7 @@ const certificateList = [
 ]
 const Certifications = () => {
   return (
-    <div className="flex flex-col space-y-5 md:space-y-8 h-screen">
+    <div className="flex flex-col space-y-5 md:space-y-8 h-full lg:h-96">
       <span className="text-3xl md:text-4xl text">{'Certificates'}</span>
 
       <div className="w-full flex justify-center">
